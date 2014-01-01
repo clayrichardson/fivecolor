@@ -67,8 +67,8 @@ aside.sidebar {
     width: 9px;
     cursor: pointer;
     &:hover {
-      background: mix($sidebar-border, $sidebar-bg);
-      @include background(linear-gradient(left, rgba($sidebar-border, .5), rgba($sidebar-border, 0)));
+      /*background: mix($sidebar-border, $sidebar-bg);*/
+      /*@include background(linear-gradient(left, rgba($sidebar-border, .5), rgba($sidebar-border, 0)));*/
     }
     &:after {
       position: absolute; right: -11px; top: 0;
@@ -89,7 +89,7 @@ aside.sidebar {
       right: -20px;
       width: 19px;
       &:hover {
-        background: mix($sidebar-border, $sidebar-bg);
+        /*background: mix($sidebar-border, $sidebar-bg);*/
       }
       &:after {
         border-left: 1px solid $sidebar-border;
