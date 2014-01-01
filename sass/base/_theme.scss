@@ -5,14 +5,18 @@ $color3: #325D88;
 $color4: #5B7288;
 $color5: #8EB1D5;
 
+$font-color: $color5;
+$bright-text-color: $font-color;
+$border-color: $color2;
+
 /*$noise-bg: image-url('noise.png') top left !default;*/
 /*$img-border: inline-image('dotted-border.png') !default;*/
 
 // Main Link Colors
-$link-color: $color2 !default;
-$link-color-hover: $color3 !default;
-$link-color-visited: $color2 !default;
-$link-color-active: $color3 !default;
+$link-color: $color3 !default;
+$link-color-hover: $color4 !default;
+$link-color-visited: $link-color !default;
+$link-color-active: $link-color-hover !default;
 
 // Main Section Colors
 $main-bg: $color1 !default;
@@ -21,23 +25,23 @@ $article-border: transparent !default;
 
 $header-bg: $color1 !default;
 $header-border: transparent !default;
-$title-color: $color4 !default;
-$subtitle-color: $color4 !default;
+$title-color: $font-color !default;
+$subtitle-color: $font-color !default;
 
-$text-color: $color4 !default;
-$text-color-light: $color5 !default;
+$text-color: $font-color !default;
+$text-color-light: $font-color !default;
 $type-border: transparent !default;
 
 /* Navigation */
 $nav-bg: $color1 !default;
 $nav-bg-front: transparent !default;
 $nav-bg-back: transparent !default; 
-$nav-color: $color2 !default;
-$nav-color-hover: $color3 !default;
+$nav-color: $link-color !default;
+$nav-color-hover: $link-color-hover !default;
 $nav-placeholder: transparent !default;
-$nav-border: $color2 !default;
-$nav-border-top: $color2 !default;
-$nav-border-bottom: $color2 !default;
+$nav-border: $border-color !default;
+$nav-border-top: $border-color !default;
+$nav-border-bottom: $border-color !default;
 $nav-border-left: transparent !default;
 $nav-border-right: transparent !default;
 
@@ -46,23 +50,23 @@ $sidebar-bg: $color1 !default;
 $sidebar-link-color: $link-color !default;
 $sidebar-link-color-hover: $link-color-hover !default;
 $sidebar-link-color-active: $link-color-active !default;
-$sidebar-color: $color4 !default;
-$sidebar-border: $color2 !default;
+$sidebar-color: $text-color !default;
+$sidebar-border: $border-color !default;
 $sidebar-border-hover: transparent !default;
 $sidebar-link-color-subdued: transparent !default;
 $sidebar-link-color-subdued-hover: transparent !default;
 
-$footer-color: $color4 !default;
+$footer-color: $text-color !default;
 $footer-bg: $color1 !default;
 $footer-bg-front: transparent !default;
 $footer-bg-back: transparent !default;
-$footer-color: $color4 !default;
+$footer-color: $text-color !default;
 $footer-color-hover: $color5 !default;
 $footer-border-top: transparent !default;
 $footer-border-bottom: transparent !default;
 $footer-link-color: $link-color  !default;
 $footer-link-color-hover: $link-color-hover !default;
-$page-border-bottom: $nav-border !default;
+$page-border-bottom: $border-color !default;
 
 
 /* Core theme application */

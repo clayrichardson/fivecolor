@@ -9,15 +9,16 @@ article {
     /*background: $img-border bottom left repeat-x;*/
     h1 {
       margin: 0;
-      a { text-decoration: none;
-        /*&:hover { text-decoration: underline; }*/ }
+      a { 
+        /*&:hover { text-decoration: underline; }*/
+      }
     }
     p {
       font-size: .9em;
       color: $text-color-light;
       margin: 0;
       &.meta {
-        @extend .sans;
+        @extend .font3;
         text-transform: uppercase;
         position: absolute; top: 0;
       }
@@ -69,7 +70,7 @@ article {
   > footer {
     padding-bottom: 2.5em;
     margin-top: 2em;
-    @extend .sans;
+    @extend .font1;
     p.meta {
       margin-bottom: .8em;
       font-size: .85em;
@@ -93,7 +94,13 @@ article + article {
   article header { background: none; padding-bottom: 0; }
   article h1 {
     font-size: 2.2em;
-    a { color: $link-color; &:hover { color: $link-color-hover; } }
+    a {
+      color: $font-color;
+      text-decoration: none;
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
   }
   a[rel=full-article] {
     /*background: darken($main-bg, 5);*/
@@ -102,11 +109,11 @@ article + article {
     margin-right: .5em;
     /*text-decoration: none;*/
     /*color: mix($text-color, $text-color-light);*/
-    /*@extend .serif;*/
+    @extend .font2;
     /*@include transition(background-color .5s);*/
   }
   footer {
-    @extend .sans;
+    @extend .font1;
     margin-top: 1em;
   }
 }
